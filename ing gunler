@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(int argc, char *argv[])
+{
+char *ay[12]={"January", "February","March",
+  "April", "May", "June","July",
+"August","September","October","November","December"};
+    int i;
+    for(i=0;i<12;i++)
+    printf("%d.Month=%s\n",i+1,ay[i]);
+  system("PAUSE");	
+  return 0;
+}

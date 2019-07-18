@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+main()
+{ 
+    double x1,x2,a,b,dlt,c;
+    printf(" gırılen degr  a b c\n");
+    scanf("%lf %lf %lf",&a,&b,&c); 
+    dlt=b*b-4*a*c;
+if (dlt>0){
+   x1=(-b+sqrt(dlt))/(2*a);
+   x2=(-b-sqrt(dlt))/(2*a);
+   printf("x1=%lf\n",x1);
+   printf("x2=%lf\n",x2);        
+               }
+else if(dlt==0){
+   x1=(-b)/(2*a);
+   printf("x1=x2=%lf\n",x1);               
+              }
+else {
+    printf("real kok yok");
+             }
+ system("PAUSE");
+ return 0;
+}

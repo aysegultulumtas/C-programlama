@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(int argc, char *argv[])
+{   
+   int x,k;
+printf("bır tam sayi giriniz\n");
+   scanf("%d",&x);
+   k=x%2;
+   if(k==0)
+   printf("sayi cift sayıdır\n");
+   else
+   printf("sayi tek sayidir\n");
+  system("PAUSE");	
+  return 0;
+}

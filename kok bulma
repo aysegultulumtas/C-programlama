@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<math.h>
+double denklem(int,int,int); 
+int main()
+{
+    float fonk,x,y,z;
+    printf("ax2+bx+c icin sirasi ile a,b ve c degerlerini giriniz :\n");
+    scanf("%f%f%f",&x,&y,&z);
+    
+    fonk=denklem(x,y,z);
+    
+    system("pause");
+}
+double denklem(int a,int b,int c)
+{
+       float delta,x1,x2;
+       delta=(b*b)-(4*a*c);
+       if(delta>0)
+       {
+                  x1=(-b+sqrt(delta))/(2*a);
+                  x2=(-b-sqrt(delta))/(2*a);
+                  printf("Denklemin 2 gercek koku vardir = %.2f ve %.2f",x1,x2);
+                  }
+                  else if(delta==0)
+                  {
+                  x1=x2=(-b)/(2*a);
+                  printf("Denklemin 2 cakisik koku vardir = %.2f",x1);
+                  }
+                  else
+                  printf("Denklemin koku yoktur!");
